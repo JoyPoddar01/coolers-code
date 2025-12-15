@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Code Identifier</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <h1>Color Code Identifier</h1>
+      <p class="subtitle">HEX → Color Name</p>
+
+      <input
+        type="text"
+        id="hexInput"
+        placeholder="Enter HEX code (e.g. #4A7FA7)"
+        maxlength="7"
+      />
+
+      <div class="preview" id="colorPreview"></div>
+
+      <div class="result">
+        <p id="colorName">Color Name</p>
+        <p id="rgbValue">RGB</p>
+      </div>
+
+      <button id="copyBtn">Copy HEX</button>
+      <p class="copy-msg" id="copyMsg"></p>
+      <p class="error" id="errorMsg"></p>
+
+      <div class="toggle">
+        <label>
+          <input type="checkbox" id="darkToggle" />
+          Dark Mode
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
